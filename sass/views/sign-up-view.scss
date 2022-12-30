@@ -1,0 +1,142 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 20/20/2020
+ *Last update: 09/03/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Sign up view.
+div.Sign-up-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Left arrow image.
+    div.Sign-up-view_Left-arrow {
+        margin-left: 20px;
+        img {
+            opacity: 0;
+            animation: 400ms GlobalOtherViewAction 0ms forwards;
+            cursor: pointer;
+        }
+    }
+    //Sign-up platform.
+    div.Sign-up-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+            margin-top: -40px;
+        }
+        //Title text.
+        label#Sign-up-view_Title {
+            @include basicTextDesign (TwCenMt, 20px, rgb(87, 85, 85));
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 200ms forwards;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 18px;
+            }
+        } span.Sign-up-view_Help {
+            padding-left: 50px;
+            padding-right: 50px;
+            display: inline-block;
+            margin-top: 6px;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            //Help text.
+            label {
+                line-height: 22px;
+                @include basicTextDesign (Arial, 12px, rgb(107, 106, 106));
+                opacity: 0;
+                animation: 300ms GlobalOtherViewAction 300ms forwards;
+            }
+        }
+        //Phone number field.
+        span#Sign-up-view_Phone-number-field {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 400ms forwards;
+        } input[type = "tel"] {
+            @include basicInputTools;
+        }
+        //Password field.
+        span#Sign-up-view_Password-field {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 500ms forwards;
+            input[type = "password"] {
+                @include basicInputTools;
+            }
+        }
+        //Cham agreement.
+        span#Sign-up-view_Cham-agreement {
+            display: inline-block;
+            margin-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 600ms forwards;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            //Checkbox.
+            input[type = "checkbox"] {
+                @include basicCheckboxTools;
+            }
+            //Agreement text.
+            input[type = "checkbox"] + label {
+                @include basicTextDesign (Arial, 14px, rgb(134, 133, 133));
+                label {
+                    display: inline;
+                    @include basicTextDesign (Arial, 14px, #EA9337);
+                    text-decoration: underline;
+                    cursor: pointer;
+                    //Mouse hover.
+                    &:hover {
+                        color: orange;
+                }   }
+            }
+        }
+        //Error message.
+        label#Sign-up-view_Error {
+            @include basicTextDesign (SegoeUi, 16px, red);
+            display: block;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+        //Create account button.
+        button#Sign-up-view_Account {
+            @include basicButtonTools (#00A651);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 700ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+            //Hide loader
+            img {
+                position: absolute;
+                margin-left: -145px;
+                margin-top: -18px;
+                transform: scale(0);
+            }
+        }
+        //Sign in button.
+        button#Sign-up-view_Sign-in {
+            @include basicButtonTools (#EA9337);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 900ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: orange;
+            }
+        }
+    }
+}

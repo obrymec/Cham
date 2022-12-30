@@ -1,0 +1,93 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Money-drop-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Money-drop-view header.Money-drop-view_Header-title {
+    background-color: #00A651;
+    transform: translateY(-100%);
+    animation: 300ms BasicTranslationAction 0ms forwards; }
+    div.Money-drop-view header.Money-drop-view_Header-title strong {
+      float: left;
+      margin-left: 15px;
+      margin-top: -10px; }
+      div.Money-drop-view header.Money-drop-view_Header-title strong label {
+        font-family: TwCenMt;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: white; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Money-drop-view header.Money-drop-view_Header-title strong label {
+            font-size: 16px; } }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Money-drop-view div.Money-drop-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%; } }
+  div.Money-drop-view div.Money-drop-view_Platform div.Money-drop-view_Image figure img {
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 200ms forwards; }
+  div.Money-drop-view div.Money-drop-view_Platform div.Money-drop-view_Image figure img + figcaption {
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    color: #444444;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 400ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Money-drop-view div.Money-drop-view_Platform div.Money-drop-view_Image figure img + figcaption {
+        font-size: 20px; } }
+  div.Money-drop-view div.Money-drop-view_Platform label#Money-drop-view_Congratulation-text {
+    font-family: Verdana;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 500ms forwards; }
+  div.Money-drop-view div.Money-drop-view_Platform label#Money-drop-view_Money-drop-text {
+    display: block;
+    margin-top: 5px;
+    font-family: Verdana;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 700ms forwards; }
+    div.Money-drop-view div.Money-drop-view_Platform label#Money-drop-view_Money-drop-text span {
+      font-family: Verdana;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #444444; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.Money-drop-view div.Money-drop-view_Platform label#Money-drop-view_Money-drop-text span {
+          font-size: 14px; } }
+  div.Money-drop-view div.Money-drop-view_Platform button#Money-drop-view_Bag {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 900ms forwards; }
+    div.Money-drop-view div.Money-drop-view_Platform button#Money-drop-view_Bag:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Money-drop-view div.Money-drop-view_Platform button#Money-drop-view_Bag {
+        font-size: 18px; } }
+    div.Money-drop-view div.Money-drop-view_Platform button#Money-drop-view_Bag:hover {
+      background-color: green; }
+
+/*# sourceMappingURL=money-drop-view.css.map */

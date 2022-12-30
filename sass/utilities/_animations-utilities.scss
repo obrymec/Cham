@@ -1,0 +1,137 @@
+//------------------------------------------------------------[Animations kit]--------------------------------------------------
+//Input focus animation.
+@keyframes InputFocusAction {
+    0% {
+        box-shadow: 1px 0.5px 3px 0 #00A651;
+    } 50% {
+        box-shadow: 1.5px 1px 4px 2px #00A651;
+    } 100% {
+        box-shadow: 1px 0.5px 3px 0 #00A651;
+    }
+}
+
+//Global right change animation.
+@keyframes GlobalRightChangeAction {
+    from {
+        transform: translateX(100%);
+    } to {
+        transform: translateX(0);
+    }
+} @keyframes GlobalRightChangeRAction {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(100%);
+    }
+}
+
+//Global left change animation.
+@keyframes GlobalLeftChangeAction {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-100%);
+    }
+} @keyframes GlobalLeftChangeRAction {
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+//Global top menu animation.
+@keyframes GlobalTopMenuAction {
+    from {
+        transform: translateY(130%);
+    } to {
+        transform: translateY(0);
+    }
+} @keyframes GlobalTopMenuRAction {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(130%);
+    }
+}
+
+//Global cross effect animation.
+@keyframes GlobalCrossEffectAction {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 0.5;
+    }
+} @keyframes GlobalCrossEffectRAction {
+    from {
+        opacity: 0.5;
+    } to {
+        opacity: 0;
+    }
+}
+
+//Global other view animation.
+@keyframes GlobalOtherViewAction {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+} @keyframes GlobalOtherViewRAction {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+//Global other effect animation.
+@keyframes GlobalOtherEffectAction {
+    0% {
+        opacity: 0;
+    } 50% {
+        opacity: 0.4;
+    } 100% {
+        opacity: 0;
+    }
+}
+
+//Global scaling animation.
+@keyframes GlobalScalingAction {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(1);
+    }
+}
+
+//Basic vertical translation animation.
+@keyframes BasicTranslationAction {
+    from {
+        transform: translateY(-100%);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+//Basic left x translation animation.
+@keyframes BasicLXTranslationAction {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+//Basic right x translation animation.
+@keyframes BasicRXTranslationAction {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

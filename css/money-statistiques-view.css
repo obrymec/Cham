@@ -1,0 +1,47 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Money-statistiques-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border-bottom: 1px solid #eee7e7;
+  border-top: 1px solid #eee7e7;
+  background-color: white;
+  margin-top: 20px;
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 200ms forwards; }
+  div.Money-statistiques-view img {
+    margin-left: 15px;
+    transform: translateY(3px); }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Money-statistiques-view img {
+        margin-left: 8px; } }
+  div.Money-statistiques-view span#Money-statistiques-view_Current-money-text {
+    display: inline-block;
+    transform: translateY(-10px);
+    margin-left: 6px; }
+    div.Money-statistiques-view span#Money-statistiques-view_Current-money-text label {
+      font-family: Arial;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #888686; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.Money-statistiques-view span#Money-statistiques-view_Current-money-text label {
+          font-size: 14px; } }
+  div.Money-statistiques-view span#Money-statistiques-view_Current-money-text + span {
+    display: inline-block;
+    transform: translateY(14px);
+    margin-right: 8px;
+    float: right; }
+    div.Money-statistiques-view span#Money-statistiques-view_Current-money-text + span label {
+      font-family: Arial;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #EA9337; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.Money-statistiques-view span#Money-statistiques-view_Current-money-text + span label {
+          font-size: 14px; } }
+
+/*# sourceMappingURL=money-statistiques-view.css.map */

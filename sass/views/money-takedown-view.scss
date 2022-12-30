@@ -1,0 +1,101 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 16/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Money takedown view.
+div.Money-takedown-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Left arrow image.
+    div.Money-takedown-view_Left-arrow {
+        img {
+            opacity: 0;
+            animation: 400ms GlobalOtherViewAction 0ms forwards;
+            cursor: pointer;
+        }
+    }
+    //Header.
+    header.Money-takedown-view_Header-title {
+        background-color: #00A651;
+        transform: translateY(-100%);
+        animation: 300ms BasicTranslationAction 0ms forwards;
+        //Title text.
+        strong {
+            float: left;
+            margin-left: 15px;
+            margin-top: -10px;
+            label {
+                @include basicTextDesign (TwCenMt, 18px, white);
+                //Responsive zone.
+                @include responsiveObject (0, 345px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    //Money takedown platform.
+    div.Money-takedown-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+        }
+        //Image.
+        div.Money-takedown-view_Image {
+            figure {
+                img {
+                    transform: scale(0);
+                    animation: 200ms GlobalScalingAction 200ms forwards;
+                }
+                img + figcaption {
+                    margin-top: 10px;
+                    line-height: 22px;
+                    @include basicTextDesign (Verdana, 14px, rgb(87, 85, 85));
+                    opacity: 0;
+                    animation: 300ms GlobalOtherViewAction 400ms forwards;
+                }
+            }
+        }
+        //Money amount field and Money amount confirm field.
+        span#Money-takedown-view_Money-amount {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 550ms forwards;
+        } span#Money-takedown-view_Confirm-money {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 650ms forwards;
+        } input[type = "text"] {
+            @include basicInputTools;
+        }
+        //Error message.
+        label#Money-takedown-view_Error {
+            @include basicTextDesign (SegoeUi, 16px, red);
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+        //Money request.
+        button#Money-takedown-view_Request {
+            @include basicButtonTools (#EA9337);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 750ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: orange;
+            }
+            //Hide loader
+            img {
+                position: absolute;
+                margin-left: -150px;
+                margin-top: -19px;
+                transform: scale(0);
+            }
+        }
+    }
+}

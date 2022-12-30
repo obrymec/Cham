@@ -1,0 +1,79 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Link-sent-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Link-sent-view div.Link-sent-view_Power {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px; }
+    div.Link-sent-view div.Link-sent-view_Power img {
+      transform: scale(0);
+      animation: 300ms GlobalScalingAction 0ms forwards;
+      cursor: pointer; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Link-sent-view div.Link-sent-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%; } }
+  div.Link-sent-view div.Link-sent-view_Platform div.Link-sent-view_Image figure img {
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 300ms forwards; }
+  div.Link-sent-view div.Link-sent-view_Platform div.Link-sent-view_Image figure img + figcaption {
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: TwCenMt;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #575555;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 500ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Link-sent-view div.Link-sent-view_Platform div.Link-sent-view_Image figure img + figcaption {
+        font-size: 18px; } }
+  div.Link-sent-view div.Link-sent-view_Platform span {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 600ms forwards; }
+    div.Link-sent-view div.Link-sent-view_Platform span label#Link-sent-view_Security-message {
+      line-height: 25px;
+      font-family: Verdana;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      color: #6b6a6a; }
+  div.Link-sent-view div.Link-sent-view_Platform button#Link-sent-view_Return {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 800ms forwards; }
+    div.Link-sent-view div.Link-sent-view_Platform button#Link-sent-view_Return:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Link-sent-view div.Link-sent-view_Platform button#Link-sent-view_Return {
+        font-size: 18px; } }
+    div.Link-sent-view div.Link-sent-view_Platform button#Link-sent-view_Return:hover {
+      background-color: orange; }
+    div.Link-sent-view div.Link-sent-view_Platform button#Link-sent-view_Return img {
+      position: absolute;
+      margin-left: -85px;
+      margin-top: -18px;
+      transform: scale(0); }
+
+/*# sourceMappingURL=link-sent-view.css.map */

@@ -1,0 +1,30 @@
+//------------------------------------------------------------[Fonts kit]---------------------------------------------
+//Verdana font.
+@font-face {
+    src: url("../Fonts/Verdana.ttf");
+    font-family: "Verdana";
+}
+
+//Tw Cen Mt font.
+@font-face {
+    src: url("../Fonts/OpenSans.ttf");
+    font-family: "OpenSans";
+}
+
+//Segoe Ui font.
+@font-face {
+    src: url("../Fonts/SegoeUi.ttf");
+    font-family: "SegoeUi";
+}
+
+//Tw Cen Mt.
+@font-face {
+    src: url("../Fonts/TwCenMt.ttf");
+    font-family: "TwCenMt";
+}
+
+//Global body configurations.
+body {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,146 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.New-email-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.New-email-view header.New-email-view_Header-title {
+    background-color: #00A651;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: TwCenMt;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: white;
+    transform: translateY(-100%);
+    animation: 300ms BasicTranslationAction 0ms forwards; }
+    div.New-email-view header.New-email-view_Header-title img {
+      transform: rotate(-90deg); }
+    div.New-email-view header.New-email-view_Header-title strong {
+      display: inline-block; }
+    div.New-email-view header.New-email-view_Header-title label {
+      display: inline-block;
+      transform: translateY(-5px); }
+    @media only screen and (min-width: 0) and (max-width: 355px) {
+      div.New-email-view header.New-email-view_Header-title {
+        font-size: 14px;
+        padding-top: 8px;
+        padding-left: 10px; } }
+  div.New-email-view div.New-email-view_Platform {
+    padding-top: 20px; }
+    @media only screen and (min-width: 0) and (max-width: 355px) {
+      div.New-email-view div.New-email-view_Platform {
+        transform: scale(0.85);
+        margin-left: -4%;
+        padding-top: 0; } }
+    div.New-email-view div.New-email-view_Platform span#New-email-view_New {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 200ms forwards; }
+    div.New-email-view div.New-email-view_Platform span#New-email-view_Confirm {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 300ms forwards; }
+    div.New-email-view div.New-email-view_Platform input[type="email"]:not(:focus) {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: 2px solid #d8d8d8;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #706E6E;
+      animation: none; }
+    div.New-email-view div.New-email-view_Platform input[type="email"]:focus {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #00A651;
+      animation-name: InputFocusAction;
+      animation-duration: 800ms;
+      animation-iteration-count: infinite; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.New-email-view div.New-email-view_Platform input[type="email"] {
+        font-size: 14px; } }
+    div.New-email-view div.New-email-view_Platform span#New-email-view_Password {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 400ms forwards; }
+      div.New-email-view div.New-email-view_Platform span#New-email-view_Password input[type="password"]:not(:focus) {
+        width: 280px;
+        height: 35px;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 20px 5px 20px;
+        border: 2px solid #d8d8d8;
+        font-family: OpenSans;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color: #706E6E;
+        animation: none; }
+      div.New-email-view div.New-email-view_Platform span#New-email-view_Password input[type="password"]:focus {
+        width: 280px;
+        height: 35px;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 20px 5px 20px;
+        border: none;
+        font-family: OpenSans;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color: #00A651;
+        animation-name: InputFocusAction;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.New-email-view div.New-email-view_Platform span#New-email-view_Password input[type="password"] {
+          font-size: 14px; } }
+    div.New-email-view div.New-email-view_Platform label#New-email-view_Error {
+      display: block;
+      font-family: SegoeUi;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: red; }
+      @media only screen and (min-width: 0) and (max-width: 355px) {
+        div.New-email-view div.New-email-view_Platform label#New-email-view_Error {
+          font-size: 14px; } }
+    div.New-email-view div.New-email-view_Platform button#New-email-view_Save-data {
+      width: 320px;
+      height: 50px;
+      outline: none;
+      border-radius: 8px;
+      background-color: #00A651;
+      font-weight: bold;
+      padding-bottom: 4px;
+      transition-property: box-shadow, background-color;
+      transition-duration: 300ms;
+      border: none;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      color: #FFF;
+      transform: scale(0);
+      animation: 200ms GlobalScalingAction 500ms forwards; }
+      div.New-email-view div.New-email-view_Platform button#New-email-view_Save-data:hover {
+        box-shadow: 1.5px 1.5px 2px silver; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.New-email-view div.New-email-view_Platform button#New-email-view_Save-data {
+          font-size: 18px; } }
+      div.New-email-view div.New-email-view_Platform button#New-email-view_Save-data:hover {
+        background-color: green; }
+      div.New-email-view div.New-email-view_Platform button#New-email-view_Save-data img {
+        position: absolute;
+        margin-left: -100px;
+        margin-top: -19px;
+        transform: scale(0); }
+
+/*# sourceMappingURL=new-email-view.css.map */

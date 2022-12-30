@@ -1,0 +1,134 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 18/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Activities view.
+div.Activities-view {
+    //Activities text.
+    div.Activities-view_Activities-text {
+        border-bottom: 1px solid rgb(238, 231, 231);
+        background-color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        opacity: 0;
+        animation: 300ms GlobalOtherViewAction 350ms forwards;
+        margin-top: 20px;
+        strong {
+            display: inline-block;
+            transform: translateY(-10px);
+            label {
+                @include basicTextDesign (Arial, 16px, rgb(141, 138, 138));
+                //Responsive zone.
+                @include responsiveObject (0, 345px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    //Months statistiques header.
+    div.Activities-view_Months-statistiques-header {
+        //Left green arrow.
+        img#Activities-view_Left-arrow {
+            margin-left: 12px;
+            float: left;
+            cursor: pointer;
+            opacity: 0;
+            animation: 300ms BasicLXTranslationAction 500ms forwards;
+        }
+        //Current month text.
+        img#Activities-view_Left-arrow + strong {
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 700ms forwards;
+            display: inline-block;
+            label {
+                @include basicTextDesign (Arial, 14px, rgb(87, 85, 85));
+            }
+        }
+        //Right yellow arrow.
+        img#Activities-view_Left-arrow + strong + img {
+            margin-right: 15px;
+            float: right;
+            cursor: pointer;
+            opacity: 0;
+            animation: 300ms BasicRXTranslationAction 500ms forwards;
+        }
+    }
+    //Global tansactions statistiques.
+    div.Activities-view_Statistiques {
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 380px;
+        //Money satatistiques loader.
+        img#Loader-content {
+            margin-top: 120px;
+            display: none;
+        }
+        //Money statistiques.
+        div.Activities-view_Money-statistiques {
+            transition: background-color 400ms;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            //Mouse hover.
+            &:hover {
+                background-color: rgb(248, 245, 245);
+            }
+            //Money state text.
+            span#Activities-view_Money-state {
+                margin-left: 12px;
+                float: left;
+                label {
+                    cursor: pointer;
+                    @include basicTextDesign (Verdana, 12px, rgb(141, 138, 138));
+                    //Responsive zone.
+                    @include responsiveObject (0, 345px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+            //Money amount text.
+            span#Activities-view_Money-amount {
+                position: absolute;
+                left: 12px;
+                label {
+                    cursor: pointer;
+                    @include basicTextDesign (Verdana, 12px, rgb(141, 138, 138));
+                    //Responsive zone.
+                    @include responsiveObject (0, 345px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+            //Current date operation.
+            span#Activities-view_Money-amount + span {
+                transform: translateY(-12px);
+                display: inline-block;
+                margin-left: 32px;
+                label {
+                    cursor: pointer;
+                    @include basicTextDesign (Verdana, 12px, rgb(141, 138, 138));
+                    //Responsive zone.
+                    @include responsiveObject (0, 345px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+            //Block note.
+            span#Activities-view_Money-amount + span + img {
+                float: right;
+                margin-right: 12px;
+                margin-top: -13px;
+                cursor: pointer;
+            }
+        }
+    }
+}

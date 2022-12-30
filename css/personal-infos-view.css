@@ -1,0 +1,182 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 18/20/2020
+ *Last update: 28/02/2020
+*/
+div.Personal-infos-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Personal-infos-view div.Personal-infos-view_Left-arrow {
+    margin-left: 20px; }
+    div.Personal-infos-view div.Personal-infos-view_Left-arrow img {
+      opacity: 0;
+      animation: 400ms GlobalOtherViewAction 0ms forwards;
+      cursor: pointer; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Personal-infos-view div.Personal-infos-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%;
+      margin-top: -40px; } }
+  div.Personal-infos-view div.Personal-infos-view_Platform label#Personal-infos-view_Title {
+    font-family: TwCenMt;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #575555;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 200ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Personal-infos-view div.Personal-infos-view_Platform label#Personal-infos-view_Title {
+        font-size: 18px; } }
+  div.Personal-infos-view div.Personal-infos-view_Platform span#Personal-infos-view_Help {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    margin-top: 6px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 300ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Personal-infos-view div.Personal-infos-view_Platform span#Personal-infos-view_Help {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    div.Personal-infos-view div.Personal-infos-view_Platform span#Personal-infos-view_Help label {
+      line-height: 22px;
+      font-family: Arial;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: #6b6a6a; }
+  div.Personal-infos-view div.Personal-infos-view_Platform span#Personal-infos-view_Name-surnames {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 400ms forwards; }
+  div.Personal-infos-view div.Personal-infos-view_Platform span#Personal-infos-view_Birth-date {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 500ms forwards; }
+  div.Personal-infos-view div.Personal-infos-view_Platform span#Personal-infos-view_City {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 600ms forwards; }
+  div.Personal-infos-view div.Personal-infos-view_Platform input[type="text"]:not(:focus) {
+    width: 280px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid #d8d8d8;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #706E6E;
+    animation: none; }
+  div.Personal-infos-view div.Personal-infos-view_Platform input[type="text"]:focus {
+    width: 280px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #00A651;
+    animation-name: InputFocusAction;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Personal-infos-view div.Personal-infos-view_Platform input[type="text"] {
+      font-size: 14px; } }
+  div.Personal-infos-view div.Personal-infos-view_Platform div.Personal-infos-view_Faculties {
+    display: inline-block;
+    width: 325px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 700ms forwards; }
+    div.Personal-infos-view div.Personal-infos-view_Platform div.Personal-infos-view_Faculties select#Personal-infos-view_Faculty {
+      background-color: white;
+      width: 325px;
+      height: 50px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 5px 20px 5px 15px;
+      border: 2px solid #d8d8d8;
+      -webkit-appearance: none;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #b1aeae; }
+    div.Personal-infos-view div.Personal-infos-view_Platform div.Personal-infos-view_Faculties select#Personal-infos-view_Faculty + img {
+      float: right;
+      margin-top: -38px;
+      position: relative;
+      z-index: 1;
+      transform: scale(0.7);
+      margin-right: 5px;
+      cursor: pointer;
+      pointer-events: none; }
+  div.Personal-infos-view div.Personal-infos-view_Platform div.Personal-infos-view_Sexes {
+    display: inline-block;
+    width: 325px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 800ms forwards; }
+    div.Personal-infos-view div.Personal-infos-view_Platform div.Personal-infos-view_Sexes select#Personal-infos-view_Sex {
+      background-color: white;
+      width: 325px;
+      height: 50px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 5px 20px 5px 15px;
+      border: 2px solid #d8d8d8;
+      -webkit-appearance: none;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #b1aeae; }
+    div.Personal-infos-view div.Personal-infos-view_Platform div.Personal-infos-view_Sexes select#Personal-infos-view_Sex + img {
+      float: right;
+      margin-top: -38px;
+      position: relative;
+      z-index: 1;
+      transform: scale(0.7);
+      margin-right: 5px;
+      cursor: pointer;
+      pointer-events: none; }
+  div.Personal-infos-view div.Personal-infos-view_Platform label#Personal-infos-view_Error {
+    font-family: SegoeUi;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: red;
+    display: block; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Personal-infos-view div.Personal-infos-view_Platform label#Personal-infos-view_Error {
+        font-size: 14px; } }
+  div.Personal-infos-view div.Personal-infos-view_Platform button#Personal-infos-view_Confirm {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 900ms forwards; }
+    div.Personal-infos-view div.Personal-infos-view_Platform button#Personal-infos-view_Confirm:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Personal-infos-view div.Personal-infos-view_Platform button#Personal-infos-view_Confirm {
+        font-size: 18px; } }
+    div.Personal-infos-view div.Personal-infos-view_Platform button#Personal-infos-view_Confirm:hover {
+      background-color: green; }
+    div.Personal-infos-view div.Personal-infos-view_Platform button#Personal-infos-view_Confirm img {
+      position: absolute;
+      margin-left: -90px;
+      margin-top: -19px;
+      transform: scale(0); }
+
+/*# sourceMappingURL=personal-infos-view.css.map */

@@ -1,0 +1,26 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Notifications-break {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Notifications-break header.Notifications-break_Header-title {
+    background-color: #00A651;
+    transform: translateY(-100%);
+    animation: 300ms BasicTranslationAction 0ms forwards; }
+    div.Notifications-break header.Notifications-break_Header-title strong {
+      float: left;
+      margin-left: 15px;
+      margin-top: -10px; }
+      div.Notifications-break header.Notifications-break_Header-title strong label {
+        font-family: TwCenMt;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: white; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Notifications-break header.Notifications-break_Header-title strong label {
+            font-size: 16px; } }
+
+/*# sourceMappingURL=notifications-break.css.map */

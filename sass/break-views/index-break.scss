@@ -1,0 +1,216 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 28/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+@import "../utilities/animations-utilities";
+@import "../utilities/tools-utilities";
+
+//Other.
+header.Other {
+    top: 0;
+    @include chamBasicLayout (1, fixed);
+    transform: translateX(0);
+    background-color: white;
+}
+
+//Money bag.
+section.Money-bag {
+    background-color: white;
+    top: 0;
+    @include chamBasicLayout (0, fixed);
+    transform: translateX(100%);
+}
+
+//Activities.
+section.Activities {
+    background-color: white;
+    top: 0;
+    @include chamBasicLayout (0, fixed);
+    transform: translateX(100%);
+}
+
+//Notifications.
+section.Notifications {
+    background-color: white;
+    top: 0;
+    @include chamBasicLayout (0, fixed);
+    transform: translateX(100%);
+}
+
+//Settings.
+section.Settings {
+    background-color: white;
+    top: 0;
+    @include chamBasicLayout (0, fixed);
+    transform: translateX(100%);
+}
+
+//Menu.
+footer.Menu {
+    background-color: #fff;
+    @include chamBasicLayout (2, fixed);
+    transform: translateY(130%);
+}
+
+//Cross effect.
+section.Cross-effect {
+    background-color: black;
+    top: 0;
+    @include chamBasicLayout (0, fixed);
+    opacity: 0;
+}
+
+//Transaction.
+section.Transaction {
+    top: 0;
+    @include chamBasicLayout (0, fixed);
+    opacity: 0;
+}
+
+//Android error system.
+section.Android-error {
+    @include chamBasicLayout (0, fixed);
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+//Global loader.
+div.Global-Loader {
+    margin-top: 270px;
+}
+
+//connecting button view.
+div.Connecting-button-view {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    background-color: #00A651;
+    @include basicTextDesign (Verdana, 18px, #FFF);
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color, 400ms;
+    //Mouse hover.
+    &:hover {
+        background-color: green;
+    }
+    //Responsive zone.
+    @include responsiveObject (0, 399px) {
+        font-size: 16px;
+    }
+    //Connect button block.
+    div.Connecting-button-view_Platform {
+        transform: translateY(-10%);
+        //Connect button text.
+        label {
+            cursor: pointer;
+        }
+    }
+}
+
+//Error system view.
+div.Error-system-view {
+    //Error system platform.
+    div.Error-system-view_Platform {
+        padding-left: 10px;
+        margin-top: 220px;
+        background-color: white;
+        padding-right: 10px;
+        border-radius: 5px;
+        width: 350px;
+        //Responsive zone.
+        @include responsiveObject (0, 390px) {
+            transform: scale(0.8);
+            margin-left: -6%;
+            width: 320px;
+        }
+        //System message text.
+        label {
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            @include basicTextDesign (Arial, 14px, rgb(107, 106, 106));
+        }
+        //Retry button.
+        button#Error-system-view_Retry {
+            @include basicButtonTools (#00A651);
+            font-weight: normal;
+            height: 35px;
+            width: 335px;
+            border-radius: 4px;
+            span {
+                display: inline-block;
+                transform: translateY(2px);
+            }
+            font-size: 16px;
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 390px) {
+                width: 300px;
+            }
+        }
+    }
+}
+
+//Transaction view.
+div.Transaction-view {
+    //Transaction platform.
+    div.Transaction-view_Platform {
+        padding-left: 10px;
+        margin-top: 200px;
+        background-color: white;
+        padding-right: 10px;
+        border-radius: 10px;
+        width: 350px;
+        box-shadow: 2px 2px 10px 10px rgb(221, 219, 219);
+        //Responsive zone.
+        @include responsiveObject (0, 390px) {
+            transform: scale(0.8);
+            margin-left: -3%;
+            width: 320px;
+        }
+        //Transaction title text.
+        label {
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            @include basicTextDesign (Arial, 18px, rgb(107, 106, 106));
+            //Responsive zone.
+            @include responsiveObject (0, 390px) {
+                font-size: 16px;
+            }
+        }
+        //Money drop button operation.
+        button#Transaction-view_Drop {
+            @include basicButtonTools (#00A651);
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 390px) {
+                width: 300px;
+            }
+        }
+        //Money takedown button operation.
+        button#Transaction-view_Takedown {
+            @include basicButtonTools (#EA9337);
+            //Mouse hover.
+            &:hover {
+                background-color: orange;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 390px) {
+                width: 300px;
+            }
+        }
+    }
+}

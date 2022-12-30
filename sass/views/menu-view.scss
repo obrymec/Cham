@@ -1,0 +1,163 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 10/02/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Global menu view section.
+div.Global-menu-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: 1% 2% 1% 2%;
+    box-shadow: -2px 0 1.5px silver;
+    background-color: #FFF;
+    //Responsive zone.
+    @include responsiveObject (0, 600px) {
+        padding: 0;
+    }
+    //Money bag option.
+    div.Global-menu-view_Money-bag-option {
+        //Current properties.
+        @include basicMenuProperties (5px, 2px);
+        //Responsive zone.
+        @include responsiveObject (475px, 600px) {
+            transform: scale(0.75);
+            margin-left: 0;
+        } @include responsiveObject (0, 474px) {
+            transform: scale(0.7) translateX(-60px);
+            margin-left: 25px;
+        } @include responsiveObject (0, 420px) {
+            transform: scale(0.7) translateX(-40px);
+            margin-left: -9px;
+        } @include responsiveObject (0, 380px) {
+            transform: scale(0.73) translateX(-30px);
+            margin-left: -15px;
+        } @include responsiveObject (0, 350px) {
+            transform: scale(0.65) translateX(-20px);
+            margin-left: -20px;
+        }
+        figcaption {
+            label {
+                transition: color 400ms;
+            }
+        }
+    }
+    //Activities option.
+    div.Global-menu-view_Activities-option {
+        //Current properties.
+        @include basicMenuProperties (2px, 0);
+        //Responsive zone.
+        @include responsiveObject (475px, 600px) {
+            transform: scale(0.75);
+            margin-left: 4px;
+        } @include responsiveObject (0, 474px) {
+            transform: scale(0.7) translateX(-30px);
+            margin-left: -15px;
+        } @include responsiveObject (0, 420px) {
+            transform: scale(0.7);
+            margin-left: -25px;
+        } @include responsiveObject (0, 380px) {
+            transform: scale(0.73) translateX(-5px);
+            margin-left: -35px;
+        } @include responsiveObject (0, 350px) {
+            transform: scale(0.65) translateX(-5px);
+            margin-left: -15px;
+        }
+        figcaption {
+            label {
+                transition: color 400ms;
+            }
+        }
+    }
+    //Transactions option.
+    div.Global-menu-view_Transactions-option {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 25px;
+        //Responsive zone.
+        @include responsiveObject (475px, 600px) {
+            transform: scale(0.9);
+        } @include responsiveObject (0, 474px) {
+            transform: scale(0.8);
+            margin-left: -10px;
+        } @include responsiveObject (0, 420px) {
+            transform: scale(0.7);
+            margin-left: -20px;
+        } @include responsiveObject (0, 380px) {
+            transform: scale(0.73);
+            margin-left: -25px;
+        }  @include responsiveObject (0, 350px) {
+            transform: scale(0.65) translateX(5px);
+            margin-left: -30px;
+        }
+        //Money bag image.
+        img {
+            transform: translateY(-60%);
+            @include responsiveObject (0, 474px) {
+                transform: translate(0, -72%);
+            } @include responsiveObject (0, 420px) {
+                transform: translate(25px, -80%);
+            } @include responsiveObject (0, 350px) {
+                transform: translate(10px, -80%);
+            }
+        }
+    }
+    //Notifications option.
+    div.Global-menu-view_Notifications-option {
+        //Current properties.
+        @include basicMenuProperties (2px, 0);
+        //Responsive zone.
+        @include responsiveObject (475px, 600px) {
+            transform: scale(0.75);
+            margin-left: 0;
+        } @include responsiveObject (0, 474px) {
+            transform: scale(0.7);
+            margin-left: -15px;
+        } @include responsiveObject (0, 420px) {
+            transform: scale(0.7) translateX(25px);
+            margin-left: -25px;
+        } @include responsiveObject (0, 380px) {
+            transform: scale(0.73) translateX(30px);
+            margin-left: -30px;
+        } @include responsiveObject (0, 350px) {
+            transform: scale(0.65) translateX(20px);
+            margin-left: -35px;
+        }
+        figcaption {
+            label {
+                transition: color 400ms;
+            }
+        }
+    }
+    //Settings option.
+    div.Global-menu-view_Settings-option {
+        //Current properties.
+        @include basicMenuProperties (2px, 2px);
+        //Responsive zone.
+        @include responsiveObject (475px, 600px) {
+            transform: scale(0.75);
+            margin-left: 0;
+        } @include responsiveObject (0, 474px) {
+            transform: scale(0.7) translateX(25px);
+            margin-left: -20px;
+        } @include responsiveObject (0, 420px) {
+            transform: scale(0.7) translateX(50px);
+            margin-left: -30px;
+        } @include responsiveObject (0, 380px) {
+            transform: scale(0.73) translateX(55px);
+            margin-left: -40px;
+        } @include responsiveObject (0, 350px) {
+            transform: scale(0.65) translateX(50px);
+            margin-left: -40px;
+        }
+        figcaption {
+            label {
+                transition: color 400ms;
+            }
+        }
+    }
+}

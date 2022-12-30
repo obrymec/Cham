@@ -1,0 +1,34 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 27/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Money bag break.
+div.Money-bag-break {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Header.
+    header.Money-bag-break_Header-title {
+        background-color: #00A651;
+        transform: translateY(-100%);
+        animation: 300ms BasicTranslationAction 0ms forwards;
+        //Title text.
+        strong {
+            float: left;
+            margin-left: 15px;
+            margin-top: -10px;
+            label {
+                @include basicTextDesign (TwCenMt, 18px, white);
+                //Responsive zone.
+                @include responsiveObject (0, 345px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

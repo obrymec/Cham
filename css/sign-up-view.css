@@ -1,0 +1,224 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 20/20/2020
+ *Last update: 09/03/2020
+*/
+div.Sign-up-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Sign-up-view div.Sign-up-view_Left-arrow {
+    margin-left: 20px; }
+    div.Sign-up-view div.Sign-up-view_Left-arrow img {
+      opacity: 0;
+      animation: 400ms GlobalOtherViewAction 0ms forwards;
+      cursor: pointer; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Sign-up-view div.Sign-up-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%;
+      margin-top: -40px; } }
+  div.Sign-up-view div.Sign-up-view_Platform label#Sign-up-view_Title {
+    font-family: TwCenMt;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #575555;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 200ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform label#Sign-up-view_Title {
+        font-size: 18px; } }
+  div.Sign-up-view div.Sign-up-view_Platform span.Sign-up-view_Help {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+    margin-top: 6px; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform span.Sign-up-view_Help {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    div.Sign-up-view div.Sign-up-view_Platform span.Sign-up-view_Help label {
+      line-height: 22px;
+      font-family: Arial;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: #6b6a6a;
+      opacity: 0;
+      animation: 300ms GlobalOtherViewAction 300ms forwards; }
+  div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Phone-number-field {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 400ms forwards; }
+  div.Sign-up-view div.Sign-up-view_Platform input[type="tel"]:not(:focus) {
+    width: 280px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid #d8d8d8;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #706E6E;
+    animation: none; }
+  div.Sign-up-view div.Sign-up-view_Platform input[type="tel"]:focus {
+    width: 280px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #00A651;
+    animation-name: InputFocusAction;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Sign-up-view div.Sign-up-view_Platform input[type="tel"] {
+      font-size: 14px; } }
+  div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Password-field {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 500ms forwards; }
+    div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Password-field input[type="password"]:not(:focus) {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: 2px solid #d8d8d8;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #706E6E;
+      animation: none; }
+    div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Password-field input[type="password"]:focus {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #00A651;
+      animation-name: InputFocusAction;
+      animation-duration: 800ms;
+      animation-iteration-count: infinite; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Password-field input[type="password"] {
+        font-size: 14px; } }
+  div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement {
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 600ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement input[type="checkbox"] {
+      -webkit-appearance: none;
+      border-radius: 8px;
+      outline-color: white;
+      width: 25px;
+      height: 25px;
+      outline: none;
+      cursor: pointer;
+      background-color: white;
+      border: 2px solid #d8d8d8; }
+      div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement input[type="checkbox"]::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        transform: translate(5.4px, 1px);
+        border-radius: 2px; }
+      div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement input[type="checkbox"]:checked {
+        background-color: #00A651;
+        border: 2px solid #d8d8d8; }
+    div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement input[type="checkbox"] + label {
+      font-family: Arial;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      color: #868585; }
+      div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement input[type="checkbox"] + label label {
+        display: inline;
+        font-family: Arial;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        color: #EA9337;
+        text-decoration: underline;
+        cursor: pointer; }
+        div.Sign-up-view div.Sign-up-view_Platform span#Sign-up-view_Cham-agreement input[type="checkbox"] + label label:hover {
+          color: orange; }
+  div.Sign-up-view div.Sign-up-view_Platform label#Sign-up-view_Error {
+    font-family: SegoeUi;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: red;
+    display: block; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform label#Sign-up-view_Error {
+        font-size: 14px; } }
+  div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Account {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 700ms forwards; }
+    div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Account:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Account {
+        font-size: 18px; } }
+    div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Account:hover {
+      background-color: green; }
+    div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Account img {
+      position: absolute;
+      margin-left: -145px;
+      margin-top: -18px;
+      transform: scale(0); }
+  div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Sign-in {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 900ms forwards; }
+    div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Sign-in:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Sign-in {
+        font-size: 18px; } }
+    div.Sign-up-view div.Sign-up-view_Platform button#Sign-up-view_Sign-in:hover {
+      background-color: orange; }
+
+/*# sourceMappingURL=sign-up-view.css.map */

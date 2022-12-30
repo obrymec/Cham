@@ -1,0 +1,86 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Transaction-view div.Transaction-view_Platform {
+  padding-left: 10px;
+  margin-top: 200px;
+  background-color: white;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 2px 2px 10px 10px #dddbdb; }
+  @media only screen and (min-width: 0) and (max-width: 390px) {
+    div.Transaction-view div.Transaction-view_Platform {
+      transform: scale(0.8);
+      margin-left: -6%;
+      width: 320px; } }
+  div.Transaction-view div.Transaction-view_Platform label {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    font-family: Arial;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Transaction-view div.Transaction-view_Platform label {
+        font-size: 16px; } }
+  div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF; }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop {
+        font-size: 18px; } }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop:hover {
+      background-color: green; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop {
+        width: 300px; } }
+  div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF; }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown {
+        font-size: 18px; } }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown:hover {
+      background-color: orange; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown {
+        width: 300px; } }
+
+/*# sourceMappingURL=transaction-view.css.map */

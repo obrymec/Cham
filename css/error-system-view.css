@@ -1,0 +1,60 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Error-system-view div.Error-system-view_Platform {
+  padding-left: 10px;
+  margin-top: 220px;
+  background-color: white;
+  padding-right: 10px;
+  border-radius: 5px;
+  width: 350px; }
+  @media only screen and (min-width: 0) and (max-width: 390px) {
+    div.Error-system-view div.Error-system-view_Platform {
+      transform: scale(0.8);
+      margin-left: -6%;
+      width: 320px; } }
+  div.Error-system-view div.Error-system-view_Platform label {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    font-family: Arial;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a; }
+  div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    font-weight: normal;
+    height: 35px;
+    width: 335px;
+    border-radius: 4px;
+    font-size: 16px; }
+    div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry {
+        font-size: 18px; } }
+    div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry span {
+      display: inline-block;
+      transform: translateY(2px); }
+    div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry:hover {
+      background-color: green; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry {
+        width: 300px; } }
+
+/*# sourceMappingURL=error-system-view.css.map */

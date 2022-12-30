@@ -1,0 +1,285 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Starting-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Starting-view div.Easy-money-view {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    transform: translateX(0%);
+    background-color: #fff;
+    z-index: 1; }
+  div.Starting-view div.Save-money-view {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    transform: translateX(-100%);
+    z-index: 0;
+    background-color: #fff; }
+  div.Starting-view div.Money-security-view {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    transform: translateX(-100%);
+    background-color: #fff;
+    z-index: 0; }
+  div.Starting-view div.Starting-break_Cross-effect {
+    opacity: 0;
+    background-color: black;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible; }
+
+@media only screen and (min-width: 0) and (max-width: 345px) {
+  div.Easy-money-view div.Easy-money-view_Platform {
+    transform: scale(0.85);
+    margin-left: -4%; } }
+div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Cham-text {
+  font-family: TwCenMt;
+  font-size: 55px;
+  letter-spacing: 1.5px;
+  color: #00A651; }
+  div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Cham-text label#Chr1 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 0ms forwards; }
+  div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Cham-text label#Chr2 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 100ms forwards; }
+  div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Cham-text label#Chr3 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 200ms forwards; }
+  div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Cham-text label#Chr4 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 300ms forwards; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Cham-text {
+      font-size: 50px; } }
+div.Easy-money-view div.Easy-money-view_Platform div.Easy-money-view_Image figure img {
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 380ms forwards; }
+div.Easy-money-view div.Easy-money-view_Platform div.Easy-money-view_Image figure img + figcaption {
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 550ms forwards;
+  margin-top: 25px;
+  line-height: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #575555; }
+div.Easy-money-view div.Easy-money-view_Platform label#Easy-money-view_Security-infos {
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 700ms forwards;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #6b6a6a; }
+div.Easy-money-view div.Easy-money-view_Platform div.Easy-money-view_Circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: silver;
+  margin-left: 0px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 700ms forwards; }
+div.Easy-money-view div.Easy-money-view_Platform div.Easy-money-view_Circle2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 20px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 800ms forwards; }
+div.Easy-money-view div.Easy-money-view_Platform div.Easy-money-view_Circle3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 20px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 900ms forwards; }
+
+@media only screen and (min-width: 0) and (max-width: 345px) {
+  div.Money-security-view div.Money-security-view_Platform {
+    transform: scale(0.85);
+    margin-left: -4%; } }
+div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Cham-text {
+  font-family: TwCenMt;
+  font-size: 55px;
+  letter-spacing: 1.5px;
+  color: #00A651; }
+  div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Cham-text label#Chr1 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 0ms forwards; }
+  div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Cham-text label#Chr2 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 100ms forwards; }
+  div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Cham-text label#Chr3 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 200ms forwards; }
+  div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Cham-text label#Chr4 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 300ms forwards; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Cham-text {
+      font-size: 50px; } }
+div.Money-security-view div.Money-security-view_Platform div.Money-security-view_Image figure img {
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 380ms forwards; }
+div.Money-security-view div.Money-security-view_Platform div.Money-security-view_Image figure img + figcaption {
+  margin-top: 25px;
+  line-height: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #575555;
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 550ms forwards; }
+div.Money-security-view div.Money-security-view_Platform label#Money-security-view_Security-infos {
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #6b6a6a;
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 700ms forwards; }
+div.Money-security-view div.Money-security-view_Platform div.Money-security-view_Circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 0px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 700ms forwards; }
+div.Money-security-view div.Money-security-view_Platform div.Money-security-view_Circle2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 20px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 800ms forwards; }
+div.Money-security-view div.Money-security-view_Platform div.Money-security-view_Circle3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: silver;
+  margin-left: 20px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 900ms forwards; }
+
+@media only screen and (min-width: 0) and (max-width: 345px) {
+  div.Save-money-view div.Save-money-view_Platform {
+    transform: scale(0.85);
+    margin-left: -4%; } }
+div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Cham-text {
+  font-family: TwCenMt;
+  font-size: 55px;
+  letter-spacing: 1.5px;
+  color: #00A651; }
+  div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Cham-text label#Chr1 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 0ms forwards; }
+  div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Cham-text label#Chr2 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 100ms forwards; }
+  div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Cham-text label#Chr3 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 200ms forwards; }
+  div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Cham-text label#Chr4 {
+    opacity: 0;
+    animation: 200ms GlobalOtherViewAction 300ms forwards; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Cham-text {
+      font-size: 50px; } }
+div.Save-money-view div.Save-money-view_Platform div.Save-money-view_Image figure img {
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 380ms forwards; }
+div.Save-money-view div.Save-money-view_Platform div.Save-money-view_Image figure img + figcaption {
+  margin-top: 25px;
+  line-height: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #575555;
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 550ms forwards; }
+div.Save-money-view div.Save-money-view_Platform label#Save-money-view_Security-infos {
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 700ms forwards;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #6b6a6a; }
+div.Save-money-view div.Save-money-view_Platform div.Save-money-view_Circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 0px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 700ms forwards; }
+div.Save-money-view div.Save-money-view_Platform div.Save-money-view_Circle2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: silver;
+  margin-left: 20px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 800ms forwards; }
+div.Save-money-view div.Save-money-view_Platform div.Save-money-view_Circle3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 20px;
+  border: 1px solid silver;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 900ms forwards; }
+
+/*# sourceMappingURL=starting-view.css.map */

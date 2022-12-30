@@ -1,0 +1,178 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 14/20/2020
+ *Last update: 28/02/2020
+*/
+div.Login-view {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Login-view div.Login-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%; } }
+  div.Login-view div.Login-view_Platform label#Login-view_Cham-text {
+    font-family: TwCenMt;
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    color: #00A651; }
+    div.Login-view div.Login-view_Platform label#Login-view_Cham-text label#Chr1 {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 0ms forwards; }
+    div.Login-view div.Login-view_Platform label#Login-view_Cham-text label#Chr2 {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 100ms forwards; }
+    div.Login-view div.Login-view_Platform label#Login-view_Cham-text label#Chr3 {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 200ms forwards; }
+    div.Login-view div.Login-view_Platform label#Login-view_Cham-text label#Chr4 {
+      opacity: 0;
+      animation: 200ms GlobalOtherViewAction 300ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform label#Login-view_Cham-text {
+        font-size: 50px; } }
+  div.Login-view div.Login-view_Platform span#Login-view_Phone-number-field {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 380ms forwards; }
+    div.Login-view div.Login-view_Platform span#Login-view_Phone-number-field input[type="tel"]:not(:focus) {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: 2px solid #d8d8d8;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #706E6E;
+      animation: none; }
+    div.Login-view div.Login-view_Platform span#Login-view_Phone-number-field input[type="tel"]:focus {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #00A651;
+      animation-name: InputFocusAction;
+      animation-duration: 800ms;
+      animation-iteration-count: infinite; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform span#Login-view_Phone-number-field input[type="tel"] {
+        font-size: 14px; } }
+  div.Login-view div.Login-view_Platform span#Login-view_Password-field {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 500ms forwards; }
+    div.Login-view div.Login-view_Platform span#Login-view_Password-field input[type="password"]:not(:focus) {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: 2px solid #d8d8d8;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #706E6E;
+      animation: none; }
+    div.Login-view div.Login-view_Platform span#Login-view_Password-field input[type="password"]:focus {
+      width: 280px;
+      height: 35px;
+      outline: none;
+      border-radius: 10px;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      font-family: OpenSans;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #00A651;
+      animation-name: InputFocusAction;
+      animation-duration: 800ms;
+      animation-iteration-count: infinite; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform span#Login-view_Password-field input[type="password"] {
+        font-size: 14px; } }
+  div.Login-view div.Login-view_Platform label#Login-view_Error {
+    display: block;
+    font-family: SegoeUi;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: red; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform label#Login-view_Error {
+        font-size: 14px; } }
+  div.Login-view div.Login-view_Platform button#Login-view_Connection {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 700ms forwards; }
+    div.Login-view div.Login-view_Platform button#Login-view_Connection:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform button#Login-view_Connection {
+        font-size: 18px; } }
+    div.Login-view div.Login-view_Platform button#Login-view_Connection:hover {
+      background-color: green; }
+    div.Login-view div.Login-view_Platform button#Login-view_Connection img {
+      position: absolute;
+      margin-left: -93px;
+      margin-top: -19px;
+      transform: scale(0); }
+  div.Login-view div.Login-view_Platform label#Login-view_Forgot-password {
+    font-family: SegoeUi;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 800ms forwards; }
+    div.Login-view div.Login-view_Platform label#Login-view_Forgot-password:hover {
+      font-weight: bold; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform label#Login-view_Forgot-password {
+        font-size: 14px; } }
+  div.Login-view div.Login-view_Platform button#Login-view_Sign-up {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 1000ms forwards;
+    pointer-events: all; }
+    div.Login-view div.Login-view_Platform button#Login-view_Sign-up:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Login-view div.Login-view_Platform button#Login-view_Sign-up {
+        font-size: 18px; } }
+    div.Login-view div.Login-view_Platform button#Login-view_Sign-up:hover {
+      background-color: orange; }
+
+/*# sourceMappingURL=login-view.css.map */

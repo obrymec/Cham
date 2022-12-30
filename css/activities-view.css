@@ -1,0 +1,106 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Activities-view div.Activities-view_Activities-text {
+  border-bottom: 1px solid #eee7e7;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 350ms forwards;
+  margin-top: 20px; }
+  div.Activities-view div.Activities-view_Activities-text strong {
+    display: inline-block;
+    transform: translateY(-10px); }
+    div.Activities-view div.Activities-view_Activities-text strong label {
+      font-family: Arial;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #8d8a8a; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.Activities-view div.Activities-view_Activities-text strong label {
+          font-size: 14px; } }
+div.Activities-view div.Activities-view_Months-statistiques-header img#Activities-view_Left-arrow {
+  margin-left: 12px;
+  float: left;
+  cursor: pointer;
+  opacity: 0;
+  animation: 300ms BasicLXTranslationAction 500ms forwards; }
+div.Activities-view div.Activities-view_Months-statistiques-header img#Activities-view_Left-arrow + strong {
+  transform: scale(0);
+  animation: 200ms GlobalScalingAction 700ms forwards;
+  display: inline-block; }
+  div.Activities-view div.Activities-view_Months-statistiques-header img#Activities-view_Left-arrow + strong label {
+    font-family: Arial;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #575555; }
+div.Activities-view div.Activities-view_Months-statistiques-header img#Activities-view_Left-arrow + strong + img {
+  margin-right: 15px;
+  float: right;
+  cursor: pointer;
+  opacity: 0;
+  animation: 300ms BasicRXTranslationAction 500ms forwards; }
+div.Activities-view div.Activities-view_Statistiques {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 380px; }
+  div.Activities-view div.Activities-view_Statistiques img#Loader-content {
+    margin-top: 120px;
+    display: none; }
+  div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques {
+    transition: background-color 400ms;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques:hover {
+      background-color: #f8f5f5; }
+    div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-state {
+      margin-left: 12px;
+      float: left; }
+      div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-state label {
+        cursor: pointer;
+        font-family: Verdana;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: #8d8a8a; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-state label {
+            font-size: 10px; } }
+    div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount {
+      position: absolute;
+      left: 12px; }
+      div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount label {
+        cursor: pointer;
+        font-family: Verdana;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: #8d8a8a; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount label {
+            font-size: 10px; } }
+    div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount + span {
+      transform: translateY(-12px);
+      display: inline-block;
+      margin-left: 32px; }
+      div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount + span label {
+        cursor: pointer;
+        font-family: Verdana;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: #8d8a8a; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount + span label {
+            font-size: 10px; } }
+    div.Activities-view div.Activities-view_Statistiques div.Activities-view_Money-statistiques span#Activities-view_Money-amount + span + img {
+      float: right;
+      margin-right: 12px;
+      margin-top: -13px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=activities-view.css.map */

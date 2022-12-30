@@ -1,0 +1,191 @@
+//------------------------------------------------------------[Tools kit]-----------------------------------------------------
+//Basic text design.
+@mixin basicTextDesign ($_font-family, $_font-size, $_text-color) {
+    font-family: $_font-family;
+    font-size: $_font-size;
+    letter-spacing: 1.5px;
+    color: $_text-color;
+}
+
+//Basic input design.
+@mixin  basicInputDesign ($_width, $_height, $_font-family, $_font-size, $_border-color, $_text-color, $_focused: none) {
+    width: $_width;
+    height: $_height;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    @if ($_focused == none) {
+        border: 2px solid $_border-color;
+    } @else {
+        border: none;
+    }
+    @include basicTextDesign ($_font-family, $_font-size, $_text-color);
+}
+
+//Basic input tools.
+@mixin basicInputTools {
+    &:not(:focus) {
+        @include basicInputDesign (280px, 35px, OpenSans, 16px, rgb(216, 216, 216), #706E6E);
+        animation: none;
+    }
+    &:focus {
+        @include basicInputDesign (280px, 35px, OpenSans, 16px, rgb(216, 216, 216), #00A651, focused);
+        animation-name: InputFocusAction;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+    }
+    //Responsive zone.
+    @include responsiveObject (0, 345px) {
+        font-size: 14px;
+    }
+}
+
+//Basic button design.
+@mixin  basicButtonDesign ($_width, $_height, $_font-family, $_font-size, $_text-color, $_bg-color) {
+    width: $_width;
+    height: $_height;
+    outline: none;
+    border-radius: 8px;
+    background-color: $_bg-color;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    @include basicTextDesign ($_font-family, $_font-size, $_text-color);
+}
+
+//Basic button tools.
+@mixin basicButtonTools ($_button-color) {
+    @include basicButtonDesign (320px, 50px, Arial, 20px, #FFF, $_button-color);
+    &:hover {
+        box-shadow: 1.5px 1.5px 2px silver;
+    }
+    //Responsive zone.
+    @include responsiveObject (0, 345px) {
+        font-size: 18px;
+    }
+}
+
+//Responsive object.
+@mixin  responsiveObject ($_min-width, $_max-width) {
+    @media only screen and (min-width: $_min-width) and (max-width: $_max-width) {
+        @content;
+    }
+}
+
+//Basic circle design.
+@mixin  basicCircleDesign ($_bg-color, $_margin-left: 0px) {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: $_bg-color;
+    margin-left: $_margin-left;
+    border: 1px solid silver;
+    display: inline-block;
+    cursor: pointer;
+}
+
+//Basic dropdown tools.
+@mixin basicDropdownTools {
+    background-color: white;
+    width: 325px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 20px 5px 15px;
+    border: 2px solid rgb(216, 216, 216);
+    -webkit-appearance: none;
+    @include basicTextDesign(OpenSans, 16px, rgb(177, 174, 174));
+}
+
+//Basic layout.
+@mixin chamBasicLayout ($_zindex: 0, $_position: absolute) {
+    position: $_position;
+    left: 0;
+    right: 0;
+    @if ($_position == absolute) {
+        top: 0;
+    } @else {
+        bottom: 0;
+    }
+    z-index: $_zindex;
+}
+
+//Basic menu text design.
+@mixin basicMenuOptionText {
+    font-family: TwCenMt;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: gray;
+    //label format text.
+    label {
+        user-select: none;
+    }
+}
+
+//Basic menu properties.
+@mixin basicMenuProperties ($_margin-left, $_translation) {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: $_margin-left;
+    //Image.
+    img {
+        transform: translateX($_translation);
+    }
+    //Option caption.
+    img + figcaption {
+        @include basicMenuOptionText;
+    }
+}
+
+//Basic locker design.
+@mixin basicLockerDesign ($_visibility) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: $_visibility;
+}
+
+//Basic dropdown image design.
+@mixin basicDropdownImageDesign {
+    float: right;
+    margin-top: -38px;
+    position: relative;
+    z-index: 1;
+    transform: scale(0.7);
+    margin-right: 5px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+//Basic checkbox tools.
+@mixin basicCheckboxTools {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    outline-color: white;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(216, 216, 216);
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        transform: translate(5.4px, 1px);
+        border-radius: 2px;
+    }
+    //Mouse checked.
+    &:checked {
+        background-color: #00A651;
+        border: 2px solid rgb(216, 216, 216);
+    }
+}

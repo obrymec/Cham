@@ -1,0 +1,340 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 28/20/2020
+ *Last update: 28/02/2020
+*/
+@keyframes InputFocusAction {
+  0% {
+    box-shadow: 1px 0.5px 3px 0 #00A651; }
+  50% {
+    box-shadow: 1.5px 1px 4px 2px #00A651; }
+  100% {
+    box-shadow: 1px 0.5px 3px 0 #00A651; } }
+@keyframes GlobalRightChangeAction {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0); } }
+@keyframes GlobalRightChangeRAction {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(100%); } }
+@keyframes GlobalLeftChangeAction {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-100%); } }
+@keyframes GlobalLeftChangeRAction {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0); } }
+@keyframes GlobalTopMenuAction {
+  from {
+    transform: translateY(130%); }
+  to {
+    transform: translateY(0); } }
+@keyframes GlobalTopMenuRAction {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(130%); } }
+@keyframes GlobalCrossEffectAction {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.5; } }
+@keyframes GlobalCrossEffectRAction {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 0; } }
+@keyframes GlobalOtherViewAction {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes GlobalOtherViewRAction {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes GlobalOtherEffectAction {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.4; }
+  100% {
+    opacity: 0; } }
+@keyframes GlobalScalingAction {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@keyframes BasicTranslationAction {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0); } }
+@keyframes BasicLXTranslationAction {
+  from {
+    opacity: 0;
+    transform: translateX(20px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes BasicRXTranslationAction {
+  from {
+    opacity: 0;
+    transform: translateX(-20px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+header.Other {
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: translateX(0);
+  background-color: white; }
+
+section.Money-bag {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  transform: translateX(100%); }
+
+section.Activities {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  transform: translateX(100%); }
+
+section.Notifications {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  transform: translateX(100%); }
+
+section.Settings {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  transform: translateX(100%); }
+
+footer.Menu {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  transform: translateY(130%); }
+
+section.Cross-effect {
+  background-color: black;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0; }
+
+section.Transaction {
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0; }
+
+section.Android-error {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0; }
+
+div.Global-Loader {
+  margin-top: 270px; }
+
+div.Connecting-button-view {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  background-color: #00A651;
+  font-family: Verdana;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #FFF;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color, 400ms; }
+  div.Connecting-button-view:hover {
+    background-color: green; }
+  @media only screen and (min-width: 0) and (max-width: 399px) {
+    div.Connecting-button-view {
+      font-size: 16px; } }
+  div.Connecting-button-view div.Connecting-button-view_Platform {
+    transform: translateY(-10%); }
+    div.Connecting-button-view div.Connecting-button-view_Platform label {
+      cursor: pointer; }
+
+div.Error-system-view div.Error-system-view_Platform {
+  padding-left: 10px;
+  margin-top: 220px;
+  background-color: white;
+  padding-right: 10px;
+  border-radius: 5px;
+  width: 350px; }
+  @media only screen and (min-width: 0) and (max-width: 390px) {
+    div.Error-system-view div.Error-system-view_Platform {
+      transform: scale(0.8);
+      margin-left: -6%;
+      width: 320px; } }
+  div.Error-system-view div.Error-system-view_Platform label {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    font-family: Arial;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a; }
+  div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    font-weight: normal;
+    height: 35px;
+    width: 335px;
+    border-radius: 4px;
+    font-size: 16px; }
+    div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry {
+        font-size: 18px; } }
+    div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry span {
+      display: inline-block;
+      transform: translateY(2px); }
+    div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry:hover {
+      background-color: green; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Error-system-view div.Error-system-view_Platform button#Error-system-view_Retry {
+        width: 300px; } }
+
+div.Transaction-view div.Transaction-view_Platform {
+  padding-left: 10px;
+  margin-top: 200px;
+  background-color: white;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 2px 2px 10px 10px #dddbdb; }
+  @media only screen and (min-width: 0) and (max-width: 390px) {
+    div.Transaction-view div.Transaction-view_Platform {
+      transform: scale(0.8);
+      margin-left: -3%;
+      width: 320px; } }
+  div.Transaction-view div.Transaction-view_Platform label {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    font-family: Arial;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Transaction-view div.Transaction-view_Platform label {
+        font-size: 16px; } }
+  div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #00A651;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF; }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop {
+        font-size: 18px; } }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop:hover {
+      background-color: green; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Drop {
+        width: 300px; } }
+  div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF; }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown {
+        font-size: 18px; } }
+    div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown:hover {
+      background-color: orange; }
+    @media only screen and (min-width: 0) and (max-width: 390px) {
+      div.Transaction-view div.Transaction-view_Platform button#Transaction-view_Takedown {
+        width: 300px; } }
+
+/*# sourceMappingURL=index-break.css.map */

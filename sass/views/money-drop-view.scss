@@ -1,0 +1,92 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 14/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Money drop view.
+div.Money-drop-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Header.
+    header.Money-drop-view_Header-title {
+        background-color: #00A651;
+        transform: translateY(-100%);
+        animation: 300ms BasicTranslationAction 0ms forwards;
+        //Title text.
+        strong {
+            float: left;
+            margin-left: 15px;
+            margin-top: -10px;
+            label {
+                @include basicTextDesign (TwCenMt, 18px, white);
+                //Responsive zone.
+                @include responsiveObject (0, 345px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    //Money drop platform.
+    div.Money-drop-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+        }
+        //Image.
+        div.Money-drop-view_Image {
+            figure {
+                img {
+                    transform: scale(0);
+                    animation: 200ms GlobalScalingAction 200ms forwards;
+                }
+                img + figcaption {
+                    margin-top: 20px;
+                    @include basicTextDesign (Arial, 22px, rgb(68, 68, 68));
+                    opacity: 0;
+                    animation: 300ms GlobalOtherViewAction 400ms forwards;
+                    //Responsive zone.
+                    @include responsiveObject (0, 345px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        //Congratulation text.
+        label#Money-drop-view_Congratulation-text {
+            @include basicTextDesign (Verdana, 14px, rgb(107, 106, 106));
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 500ms forwards;
+        }
+        //Money drop text.
+        label#Money-drop-view_Money-drop-text {
+            display: block;
+            margin-top: 5px;
+            @include basicTextDesign (Verdana, 14px, rgb(107, 106, 106));
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 700ms forwards;
+            span {
+                @include basicTextDesign (Verdana, 16px, rgb(68, 68, 68));
+                //Responsive zone.
+                @include responsiveObject (0, 345px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        //Money drop bag.
+        button#Money-drop-view_Bag {
+            @include basicButtonTools (#00A651);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 900ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+        }
+    }
+}

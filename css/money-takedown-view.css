@@ -1,0 +1,123 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Money-takedown-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Money-takedown-view div.Money-takedown-view_Left-arrow img {
+    opacity: 0;
+    animation: 400ms GlobalOtherViewAction 0ms forwards;
+    cursor: pointer; }
+  div.Money-takedown-view header.Money-takedown-view_Header-title {
+    background-color: #00A651;
+    transform: translateY(-100%);
+    animation: 300ms BasicTranslationAction 0ms forwards; }
+    div.Money-takedown-view header.Money-takedown-view_Header-title strong {
+      float: left;
+      margin-left: 15px;
+      margin-top: -10px; }
+      div.Money-takedown-view header.Money-takedown-view_Header-title strong label {
+        font-family: TwCenMt;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: white; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Money-takedown-view header.Money-takedown-view_Header-title strong label {
+            font-size: 16px; } }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Money-takedown-view div.Money-takedown-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%; } }
+  div.Money-takedown-view div.Money-takedown-view_Platform div.Money-takedown-view_Image figure img {
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 200ms forwards; }
+  div.Money-takedown-view div.Money-takedown-view_Platform div.Money-takedown-view_Image figure img + figcaption {
+    margin-top: 10px;
+    line-height: 22px;
+    font-family: Verdana;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #575555;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 400ms forwards; }
+  div.Money-takedown-view div.Money-takedown-view_Platform span#Money-takedown-view_Money-amount {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 550ms forwards; }
+  div.Money-takedown-view div.Money-takedown-view_Platform span#Money-takedown-view_Confirm-money {
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 650ms forwards; }
+  div.Money-takedown-view div.Money-takedown-view_Platform input[type="text"]:not(:focus) {
+    width: 280px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid #d8d8d8;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #706E6E;
+    animation: none; }
+  div.Money-takedown-view div.Money-takedown-view_Platform input[type="text"]:focus {
+    width: 280px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #00A651;
+    animation-name: InputFocusAction;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite; }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Money-takedown-view div.Money-takedown-view_Platform input[type="text"] {
+      font-size: 14px; } }
+  div.Money-takedown-view div.Money-takedown-view_Platform label#Money-takedown-view_Error {
+    font-family: SegoeUi;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: red; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Money-takedown-view div.Money-takedown-view_Platform label#Money-takedown-view_Error {
+        font-size: 14px; } }
+  div.Money-takedown-view div.Money-takedown-view_Platform button#Money-takedown-view_Request {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 750ms forwards; }
+    div.Money-takedown-view div.Money-takedown-view_Platform button#Money-takedown-view_Request:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Money-takedown-view div.Money-takedown-view_Platform button#Money-takedown-view_Request {
+        font-size: 18px; } }
+    div.Money-takedown-view div.Money-takedown-view_Platform button#Money-takedown-view_Request:hover {
+      background-color: orange; }
+    div.Money-takedown-view div.Money-takedown-view_Platform button#Money-takedown-view_Request img {
+      position: absolute;
+      margin-left: -150px;
+      margin-top: -19px;
+      transform: scale(0); }
+
+/*# sourceMappingURL=money-takedown-view.css.map */

@@ -1,0 +1,72 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Notifications-view div.Notifications-view_Activities-text {
+  border-bottom: 1px solid #eee7e7;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: 300ms GlobalOtherViewAction 350ms forwards; }
+  div.Notifications-view div.Notifications-view_Activities-text strong {
+    display: inline-block;
+    transform: translateY(-10px); }
+    div.Notifications-view div.Notifications-view_Activities-text strong label {
+      font-family: Arial;
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      color: #8d8a8a; }
+      @media only screen and (min-width: 0) and (max-width: 345px) {
+        div.Notifications-view div.Notifications-view_Activities-text strong label {
+          font-size: 14px; } }
+div.Notifications-view div.Notifications-view_Statistiques {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 420px; }
+  div.Notifications-view div.Notifications-view_Statistiques img#Loader-content {
+    margin-top: 120px;
+    display: none; }
+  div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 400ms;
+    cursor: pointer; }
+    div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state:hover {
+      background-color: #f8f5f5; }
+    div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation {
+      margin-left: 12px;
+      float: left; }
+      div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation label {
+        cursor: pointer;
+        font-family: Verdana;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: #8d8a8a; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation label {
+            font-size: 10px; } }
+    div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation + span {
+      display: inline-block;
+      margin-left: 15px; }
+      div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation + span label {
+        cursor: pointer;
+        font-family: Verdana;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: #8d8a8a; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation + span label {
+            font-size: 10px; } }
+    div.Notifications-view div.Notifications-view_Statistiques div.Notifications-view_App-state span#Notifications-view_Operation + span + img {
+      float: right;
+      margin-right: 12px;
+      margin-top: -3px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=notifications-view.css.map */

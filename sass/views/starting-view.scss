@@ -1,0 +1,253 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 22/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Starting view.
+div.Starting-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Easy money view.
+    div.Easy-money-view {
+        @include basicLockerDesign (visible);
+        transform: translateX(0%);
+        background-color: #fff;
+        z-index: 1;
+    }
+    //Save money view.
+    div.Save-money-view {
+        @include basicLockerDesign (visible);
+        transform: translateX(-100%);
+        z-index: 0;
+        background-color: #fff;
+    }
+    //Money security view.
+    div.Money-security-view {
+        @include basicLockerDesign (visible);
+        transform: translateX(-100%);
+        background-color: #fff;
+        z-index: 0;
+    }
+    //Cross effect.
+    div.Starting-break_Cross-effect {
+        opacity: 0;
+        background-color: black;
+        z-index: 0;
+        @include basicLockerDesign (visible);
+    }
+}
+
+//Easy money view.
+div.Easy-money-view {
+    //Easy money platform.
+    div.Easy-money-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+        }
+        //Cham text.
+        label#Easy-money-view_Cham-text {
+            @include basicTextDesign (TwCenMt, 55px, #00A651);
+            //Cham text animation.
+            label#Chr1 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 0ms forwards;
+            } label#Chr2 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 100ms forwards;
+            } label#Chr3 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 200ms forwards;
+            } label#Chr4 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 300ms forwards;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 50px;
+            }
+        }
+        //Image.
+        div.Easy-money-view_Image {
+            figure {
+                img {
+                    transform: scale(0);
+                    animation: 200ms GlobalScalingAction 380ms forwards;
+                }
+                img + figcaption {
+                    opacity: 0;
+                    animation: 300ms GlobalOtherViewAction 550ms forwards;
+                    margin-top: 25px;
+                    line-height: 20px;
+                    @include basicTextDesign (Arial, 14px, rgb(87, 85, 85));
+                }
+            }
+        }
+        //Security messages infos.
+        label#Easy-money-view_Security-infos {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 700ms forwards;
+            @include basicTextDesign (Arial, 12px, rgb(107, 106, 106));
+        }
+        //Circles.
+        div.Easy-money-view_Circle1 {
+            @include basicCircleDesign (silver);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 700ms forwards;
+        } div.Easy-money-view_Circle2 {
+            @include basicCircleDesign (white, 20px);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 800ms forwards;
+        } div.Easy-money-view_Circle3 {
+            @include basicCircleDesign (white, 20px);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 900ms forwards;
+        }
+    }
+}
+
+//Money security view.
+div.Money-security-view {
+    //Money security platform.
+    div.Money-security-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+        }
+        //Cham text.
+        label#Money-security-view_Cham-text {
+            @include basicTextDesign (TwCenMt, 55px, #00A651);
+            //Cham text animation.
+            label#Chr1 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 0ms forwards;
+            } label#Chr2 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 100ms forwards;
+            } label#Chr3 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 200ms forwards;
+            } label#Chr4 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 300ms forwards;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 50px;
+            }
+        }
+        //Image.
+        div.Money-security-view_Image {
+            figure {
+                img {
+                    transform: scale(0);
+                    animation: 200ms GlobalScalingAction 380ms forwards;
+                }
+                img + figcaption {
+                    margin-top: 25px;
+                    line-height: 20px;
+                    @include basicTextDesign (Arial, 14px, rgb(87, 85, 85));
+                    opacity: 0;
+                    animation: 300ms GlobalOtherViewAction 550ms forwards;
+                }
+            }
+        }
+        //Security messages infos.
+        label#Money-security-view_Security-infos {
+            @include basicTextDesign (Arial, 12px, rgb(107, 106, 106));
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 700ms forwards;
+        }
+        //Circles.
+        div.Money-security-view_Circle1 {
+            @include basicCircleDesign (white);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 700ms forwards;
+        } div.Money-security-view_Circle2 {
+            @include basicCircleDesign (white, 20px);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 800ms forwards;
+        } div.Money-security-view_Circle3 {
+            @include basicCircleDesign (silver, 20px);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 900ms forwards;
+        }
+    }
+}
+
+//Save money view.
+div.Save-money-view {
+    //Save money platform.
+    div.Save-money-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+        }
+        //Cham text.
+        label#Save-money-view_Cham-text {
+            @include basicTextDesign (TwCenMt, 55px, #00A651);
+            //Cham text animation.
+            label#Chr1 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 0ms forwards;
+            } label#Chr2 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 100ms forwards;
+            } label#Chr3 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 200ms forwards;
+            } label#Chr4 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 300ms forwards;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 50px;
+            }
+        }
+        //Image.
+        div.Save-money-view_Image {
+            figure {
+                img {
+                    transform: scale(0);
+                    animation: 200ms GlobalScalingAction 380ms forwards;
+                }
+                img + figcaption {
+                    margin-top: 25px;
+                    line-height: 20px;
+                    @include basicTextDesign (Arial, 14px, rgb(87, 85, 85));
+                    opacity: 0;
+                    animation: 300ms GlobalOtherViewAction 550ms forwards;
+                }
+            }
+        }
+        //Security messages infos.
+        label#Save-money-view_Security-infos {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 700ms forwards;
+            @include basicTextDesign (Arial, 12px, rgb(107, 106, 106));
+        }
+        //Circles.
+        div.Save-money-view_Circle1 {
+            @include basicCircleDesign (white);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 700ms forwards;
+        } div.Save-money-view_Circle2 {
+            @include basicCircleDesign (silver, 20px);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 800ms forwards;
+        } div.Save-money-view_Circle3 {
+            @include basicCircleDesign (white, 20px);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 900ms forwards;
+        }
+    }
+}

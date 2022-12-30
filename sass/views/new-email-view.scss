@@ -1,0 +1,96 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 12/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//New email view.
+div.New-email-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Header title.
+    header.New-email-view_Header-title {
+        background-color: #00A651;
+        padding-left: 14px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        @include basicTextDesign (TwCenMt, 18px, white);
+        transform: translateY(-100%);
+        animation: 300ms BasicTranslationAction 0ms forwards;
+        //Arrow images.
+        img {
+            transform: rotate(-90deg);
+        }
+        //Paths text.
+        strong {
+            display: inline-block;
+        } label {
+            display: inline-block;
+            transform: translateY(-5px);
+        }
+        //Responsive zone.
+        @include responsiveObject (0, 355px) {
+            font-size: 14px;
+            padding-top: 8px;
+            padding-left: 10px;
+        }
+    }
+    //New email platform.
+    div.New-email-view_Platform {
+        padding-top: 20px;
+        //Responsive zone.
+        @include responsiveObject (0, 355px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+            padding-top: 0;
+        }
+        //Email field.
+        span#New-email-view_New {
+            opacity: 0;
+            animation: 200ms GlobalOtherViewAction 200ms forwards;
+        } span#New-email-view_Confirm {
+            opacity: 0;
+            animation: 200ms GlobalOtherViewAction 300ms forwards;
+        } input[type = "email"] {
+            @include basicInputTools;
+        }
+        //Password field.
+        span#New-email-view_Password {
+            opacity: 0;
+            animation: 200ms GlobalOtherViewAction 400ms forwards;
+            input[type = "password"] {
+                @include basicInputTools;
+            }   
+        }
+        //Error message.
+        label#New-email-view_Error {
+            display: block;
+            @include basicTextDesign (SegoeUi, 16px, red);
+            //Responsive zone.
+            @include responsiveObject (0, 355px) {
+                font-size: 14px;
+            }
+        }
+        //Save data button.
+        button#New-email-view_Save-data {
+            @include basicButtonTools (#00A651);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 500ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+            //Hide loader
+            img {
+                position: absolute;
+                margin-left: -100px;
+                margin-top: -19px;
+                transform: scale(0);
+            }
+        }
+    }
+}

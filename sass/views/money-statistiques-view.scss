@@ -1,0 +1,59 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 20/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Money statistiques view.
+div.Money-statistiques-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border-bottom: 1px solid rgb(238, 231, 231);
+    border-top: 1px solid rgb(238, 231, 231);
+    background-color: white;
+    margin-top: 20px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 200ms forwards;
+    //Graph state.
+    img {
+        margin-left: 15px;
+        transform: translateY(3px);
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            margin-left: 8px;
+        }
+    }
+    //Current money text.
+    span#Money-statistiques-view_Current-money-text {
+        display: inline-block;
+        transform: translateY(-10px);
+        margin-left: 6px;
+        //Text.
+        label {
+            @include basicTextDesign (Arial, 16px, rgb(136, 134, 134));
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+    }
+    //Money value.
+    span#Money-statistiques-view_Current-money-text + span {
+        display: inline-block;
+        transform: translateY(14px);
+        float: right;
+        margin-right: 8px;
+        //Text.
+        label {
+            @include basicTextDesign (Arial, 16px, #EA9337);
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

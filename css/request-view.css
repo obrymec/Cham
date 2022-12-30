@@ -1,0 +1,90 @@
+/*
+ *@Alaska GeForce gtx
+ *26/02/2020
+*/
+div.Request-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+  div.Request-view header.Request-view_Header-title {
+    background-color: #00A651;
+    transform: translateY(-100%);
+    animation: 300ms BasicTranslationAction 0ms forwards; }
+    div.Request-view header.Request-view_Header-title strong {
+      float: left;
+      margin-left: 15px;
+      margin-top: -10px; }
+      div.Request-view header.Request-view_Header-title strong label {
+        font-family: TwCenMt;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        color: white; }
+        @media only screen and (min-width: 0) and (max-width: 345px) {
+          div.Request-view header.Request-view_Header-title strong label {
+            font-size: 16px; } }
+  @media only screen and (min-width: 0) and (max-width: 345px) {
+    div.Request-view div.Request-view_Platform {
+      transform: scale(0.85);
+      margin-left: -4%; } }
+  div.Request-view div.Request-view_Platform div.Request-view_Image figure img {
+    margin-left: -65px;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 200ms forwards; }
+  div.Request-view div.Request-view_Platform div.Request-view_Image figure img + figcaption {
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    color: #444444;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 400ms forwards; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Request-view div.Request-view_Platform div.Request-view_Image figure img + figcaption {
+        font-size: 20px; } }
+  div.Request-view div.Request-view_Platform label#Request-view_Congratulation-text {
+    font-family: Verdana;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #6b6a6a;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 500ms forwards; }
+  div.Request-view div.Request-view_Platform span {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    animation: 300ms GlobalOtherViewAction 700ms forwards; }
+    div.Request-view div.Request-view_Platform span label#Request-view_Message-text {
+      display: block;
+      line-height: 24px;
+      font-family: Verdana;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      color: #6b6a6a; }
+  div.Request-view div.Request-view_Platform button#Request-view_Bag {
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #EA9337;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition-property: box-shadow, background-color;
+    transition-duration: 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #FFF;
+    transform: scale(0);
+    animation: 200ms GlobalScalingAction 900ms forwards; }
+    div.Request-view div.Request-view_Platform button#Request-view_Bag:hover {
+      box-shadow: 1.5px 1.5px 2px silver; }
+    @media only screen and (min-width: 0) and (max-width: 345px) {
+      div.Request-view div.Request-view_Platform button#Request-view_Bag {
+        font-size: 18px; } }
+    div.Request-view div.Request-view_Platform button#Request-view_Bag:hover {
+      background-color: orange; }
+
+/*# sourceMappingURL=request-view.css.map */

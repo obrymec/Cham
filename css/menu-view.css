@@ -1,0 +1,191 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 10/02/2020
+ *Last update: 28/02/2020
+*/
+div.Global-menu-view {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  padding: 1% 2% 1% 2%;
+  box-shadow: -2px 0 1.5px silver;
+  background-color: #FFF; }
+  @media only screen and (min-width: 0) and (max-width: 600px) {
+    div.Global-menu-view {
+      padding: 0; } }
+  div.Global-menu-view div.Global-menu-view_Money-bag-option {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px; }
+    div.Global-menu-view div.Global-menu-view_Money-bag-option img {
+      transform: translateX(2px); }
+    div.Global-menu-view div.Global-menu-view_Money-bag-option img + figcaption {
+      font-family: TwCenMt;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: gray; }
+      div.Global-menu-view div.Global-menu-view_Money-bag-option img + figcaption label {
+        user-select: none; }
+    @media only screen and (min-width: 475px) and (max-width: 600px) {
+      div.Global-menu-view div.Global-menu-view_Money-bag-option {
+        transform: scale(0.75);
+        margin-left: 0; } }
+    @media only screen and (min-width: 0) and (max-width: 474px) {
+      div.Global-menu-view div.Global-menu-view_Money-bag-option {
+        transform: scale(0.7) translateX(-60px);
+        margin-left: 25px; } }
+    @media only screen and (min-width: 0) and (max-width: 420px) {
+      div.Global-menu-view div.Global-menu-view_Money-bag-option {
+        transform: scale(0.7) translateX(-40px);
+        margin-left: -9px; } }
+    @media only screen and (min-width: 0) and (max-width: 380px) {
+      div.Global-menu-view div.Global-menu-view_Money-bag-option {
+        transform: scale(0.73) translateX(-30px);
+        margin-left: -15px; } }
+    @media only screen and (min-width: 0) and (max-width: 350px) {
+      div.Global-menu-view div.Global-menu-view_Money-bag-option {
+        transform: scale(0.65) translateX(-20px);
+        margin-left: -20px; } }
+    div.Global-menu-view div.Global-menu-view_Money-bag-option figcaption label {
+      transition: color 400ms; }
+  div.Global-menu-view div.Global-menu-view_Activities-option {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 2px; }
+    div.Global-menu-view div.Global-menu-view_Activities-option img {
+      transform: translateX(0); }
+    div.Global-menu-view div.Global-menu-view_Activities-option img + figcaption {
+      font-family: TwCenMt;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: gray; }
+      div.Global-menu-view div.Global-menu-view_Activities-option img + figcaption label {
+        user-select: none; }
+    @media only screen and (min-width: 475px) and (max-width: 600px) {
+      div.Global-menu-view div.Global-menu-view_Activities-option {
+        transform: scale(0.75);
+        margin-left: 4px; } }
+    @media only screen and (min-width: 0) and (max-width: 474px) {
+      div.Global-menu-view div.Global-menu-view_Activities-option {
+        transform: scale(0.7) translateX(-30px);
+        margin-left: -15px; } }
+    @media only screen and (min-width: 0) and (max-width: 420px) {
+      div.Global-menu-view div.Global-menu-view_Activities-option {
+        transform: scale(0.7);
+        margin-left: -25px; } }
+    @media only screen and (min-width: 0) and (max-width: 380px) {
+      div.Global-menu-view div.Global-menu-view_Activities-option {
+        transform: scale(0.73) translateX(-5px);
+        margin-left: -35px; } }
+    @media only screen and (min-width: 0) and (max-width: 350px) {
+      div.Global-menu-view div.Global-menu-view_Activities-option {
+        transform: scale(0.65) translateX(-5px);
+        margin-left: -15px; } }
+    div.Global-menu-view div.Global-menu-view_Activities-option figcaption label {
+      transition: color 400ms; }
+  div.Global-menu-view div.Global-menu-view_Transactions-option {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 25px; }
+    @media only screen and (min-width: 475px) and (max-width: 600px) {
+      div.Global-menu-view div.Global-menu-view_Transactions-option {
+        transform: scale(0.9); } }
+    @media only screen and (min-width: 0) and (max-width: 474px) {
+      div.Global-menu-view div.Global-menu-view_Transactions-option {
+        transform: scale(0.8);
+        margin-left: -10px; } }
+    @media only screen and (min-width: 0) and (max-width: 420px) {
+      div.Global-menu-view div.Global-menu-view_Transactions-option {
+        transform: scale(0.7);
+        margin-left: -20px; } }
+    @media only screen and (min-width: 0) and (max-width: 380px) {
+      div.Global-menu-view div.Global-menu-view_Transactions-option {
+        transform: scale(0.73);
+        margin-left: -25px; } }
+    @media only screen and (min-width: 0) and (max-width: 350px) {
+      div.Global-menu-view div.Global-menu-view_Transactions-option {
+        transform: scale(0.65) translateX(5px);
+        margin-left: -30px; } }
+    div.Global-menu-view div.Global-menu-view_Transactions-option img {
+      transform: translateY(-60%); }
+      @media only screen and (min-width: 0) and (max-width: 474px) {
+        div.Global-menu-view div.Global-menu-view_Transactions-option img {
+          transform: translate(0, -72%); } }
+      @media only screen and (min-width: 0) and (max-width: 420px) {
+        div.Global-menu-view div.Global-menu-view_Transactions-option img {
+          transform: translate(25px, -80%); } }
+      @media only screen and (min-width: 0) and (max-width: 350px) {
+        div.Global-menu-view div.Global-menu-view_Transactions-option img {
+          transform: translate(10px, -80%); } }
+  div.Global-menu-view div.Global-menu-view_Notifications-option {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 2px; }
+    div.Global-menu-view div.Global-menu-view_Notifications-option img {
+      transform: translateX(0); }
+    div.Global-menu-view div.Global-menu-view_Notifications-option img + figcaption {
+      font-family: TwCenMt;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: gray; }
+      div.Global-menu-view div.Global-menu-view_Notifications-option img + figcaption label {
+        user-select: none; }
+    @media only screen and (min-width: 475px) and (max-width: 600px) {
+      div.Global-menu-view div.Global-menu-view_Notifications-option {
+        transform: scale(0.75);
+        margin-left: 0; } }
+    @media only screen and (min-width: 0) and (max-width: 474px) {
+      div.Global-menu-view div.Global-menu-view_Notifications-option {
+        transform: scale(0.7);
+        margin-left: -15px; } }
+    @media only screen and (min-width: 0) and (max-width: 420px) {
+      div.Global-menu-view div.Global-menu-view_Notifications-option {
+        transform: scale(0.7) translateX(25px);
+        margin-left: -25px; } }
+    @media only screen and (min-width: 0) and (max-width: 380px) {
+      div.Global-menu-view div.Global-menu-view_Notifications-option {
+        transform: scale(0.73) translateX(30px);
+        margin-left: -30px; } }
+    @media only screen and (min-width: 0) and (max-width: 350px) {
+      div.Global-menu-view div.Global-menu-view_Notifications-option {
+        transform: scale(0.65) translateX(20px);
+        margin-left: -35px; } }
+    div.Global-menu-view div.Global-menu-view_Notifications-option figcaption label {
+      transition: color 400ms; }
+  div.Global-menu-view div.Global-menu-view_Settings-option {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 2px; }
+    div.Global-menu-view div.Global-menu-view_Settings-option img {
+      transform: translateX(2px); }
+    div.Global-menu-view div.Global-menu-view_Settings-option img + figcaption {
+      font-family: TwCenMt;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: gray; }
+      div.Global-menu-view div.Global-menu-view_Settings-option img + figcaption label {
+        user-select: none; }
+    @media only screen and (min-width: 475px) and (max-width: 600px) {
+      div.Global-menu-view div.Global-menu-view_Settings-option {
+        transform: scale(0.75);
+        margin-left: 0; } }
+    @media only screen and (min-width: 0) and (max-width: 474px) {
+      div.Global-menu-view div.Global-menu-view_Settings-option {
+        transform: scale(0.7) translateX(25px);
+        margin-left: -20px; } }
+    @media only screen and (min-width: 0) and (max-width: 420px) {
+      div.Global-menu-view div.Global-menu-view_Settings-option {
+        transform: scale(0.7) translateX(50px);
+        margin-left: -30px; } }
+    @media only screen and (min-width: 0) and (max-width: 380px) {
+      div.Global-menu-view div.Global-menu-view_Settings-option {
+        transform: scale(0.73) translateX(55px);
+        margin-left: -40px; } }
+    @media only screen and (min-width: 0) and (max-width: 350px) {
+      div.Global-menu-view div.Global-menu-view_Settings-option {
+        transform: scale(0.65) translateX(50px);
+        margin-left: -40px; } }
+    div.Global-menu-view div.Global-menu-view_Settings-option figcaption label {
+      transition: color 400ms; }
+
+/*# sourceMappingURL=menu-view.css.map */

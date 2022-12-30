@@ -1,0 +1,114 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 14/20/2020
+ *Last update: 28/02/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Login view.
+div.Login-view {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    //Login platform.
+    div.Login-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+        }
+        //Cham text.
+        label#Login-view_Cham-text {
+            @include basicTextDesign (TwCenMt, 55px, #00A651);
+            //Cham text animation.
+            label#Chr1 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 0ms forwards;
+            } label#Chr2 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 100ms forwards;
+            } label#Chr3 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 200ms forwards;
+            } label#Chr4 {
+                opacity: 0;
+                animation: 200ms GlobalOtherViewAction 300ms forwards;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 50px;
+            }
+        }
+        //Phone number field.
+        span#Login-view_Phone-number-field {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 380ms forwards;
+            input[type = "tel"] {
+                @include basicInputTools;
+            }
+        }
+        //Password field.
+        span#Login-view_Password-field {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 500ms forwards;
+            input[type = "password"] {
+                @include basicInputTools;
+            }
+        }
+        //Error message.
+        label#Login-view_Error {
+            display: block;
+            @include basicTextDesign (SegoeUi, 16px, red);
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+        //Login button.
+        button#Login-view_Connection {
+            @include basicButtonTools (#00A651);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 700ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+            //Hide loader
+            img {
+                position: absolute;
+                margin-left: -93px;
+                margin-top: -19px;
+                transform: scale(0);
+            }
+        }
+        //Forgot password.
+        label#Login-view_Forgot-password {
+            @include basicTextDesign (SegoeUi, 16px, grey);
+            text-decoration: underline;
+            cursor: pointer;
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 800ms forwards;
+            //Mouse hover.
+            &:hover {
+                font-weight: bold;
+            }
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+        //Sign up button.
+        button#Login-view_Sign-up {
+            @include basicButtonTools (#EA9337);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 1000ms forwards;
+            pointer-events: all;
+            //Mouse hover.
+            &:hover {
+                background-color: orange;
+            }
+        }
+    }
+}

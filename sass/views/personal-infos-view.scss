@@ -1,0 +1,129 @@
+/*
+ *@Alaska GeForce gtx
+ *Creation date: 18/20/2020
+ *Last update: 09/03/2020
+*/
+
+//Importations.
+@import "../utilities/tools-utilities";
+
+//Personal infos view.
+div.Personal-infos-view {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //Left arrow image.
+    div.Personal-infos-view_Left-arrow {
+        margin-left: 20px;
+        img {
+            opacity: 0;
+            animation: 400ms GlobalOtherViewAction 0ms forwards;
+            cursor: pointer;
+        }
+    }
+    //Personal infos platform.
+    div.Personal-infos-view_Platform {
+        //Responsive zone.
+        @include responsiveObject (0, 345px) {
+            transform: scale(0.85);
+            margin-left: -4%;
+            margin-top: -40px;
+        }
+        //Title text.
+        label#Personal-infos-view_Title {
+            @include basicTextDesign (TwCenMt, 20px, rgb(87, 85, 85));
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 200ms forwards;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 18px;
+            }
+        } span#Personal-infos-view_Help {
+            padding-left: 50px;
+            padding-right: 50px;
+            display: block;
+            margin-top: 6px;
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 300ms forwards;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            //Help text.
+            label {
+                line-height: 22px;
+                @include basicTextDesign (Arial, 12px, rgb(107, 106, 106));
+            }
+        }
+        //Inputs fields.
+        span#Personal-infos-view_Name-surnames {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 400ms forwards;
+        } span#Personal-infos-view_Birth-date {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 500ms forwards;
+        } span#Personal-infos-view_City {
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 600ms forwards;
+        } input[type = "text"] {
+            @include basicInputTools;
+        }
+        //Faculty combo box.
+        div.Personal-infos-view_Faculties {
+            display: inline-block;
+            width: 325px;
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 700ms forwards;
+            //Faculty.
+            select#Personal-infos-view_Faculty {
+                @include basicDropdownTools;
+            }
+            //Down arrow.
+            select#Personal-infos-view_Faculty + img {
+                @include basicDropdownImageDesign;
+            }
+        }
+        //Sex combo box.
+        div.Personal-infos-view_Sexes {
+            display: inline-block;
+            width: 325px;
+            opacity: 0;
+            animation: 300ms GlobalOtherViewAction 800ms forwards;
+            //Faculty.
+            select#Personal-infos-view_Sex {
+                @include basicDropdownTools;
+            }
+            //Down arrow.
+            select#Personal-infos-view_Sex + img {
+                @include basicDropdownImageDesign;
+            }
+        }
+        //Error message.
+        label#Personal-infos-view_Error {
+            @include basicTextDesign (SegoeUi, 16px, red);
+            display: block;
+            //Responsive zone.
+            @include responsiveObject (0, 345px) {
+                font-size: 14px;
+            }
+        }
+        //Confirm button.
+        button#Personal-infos-view_Confirm {
+            @include basicButtonTools (#00A651);
+            transform: scale(0);
+            animation: 200ms GlobalScalingAction 900ms forwards;
+            //Mouse hover.
+            &:hover {
+                background-color: green;
+            }
+            //Hide loader
+            img {
+                position: absolute;
+                margin-left: -90px;
+                margin-top: -19px;
+                transform: scale(0);
+            }
+        }
+    }
+}
