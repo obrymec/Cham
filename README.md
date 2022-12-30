@@ -1,11 +1,11 @@
 # Cham
-![](https://img.shields.io/badge/jquery--mobile-1.5.1-green)
+![](https://img.shields.io/badge/jquery--mobile-1.3.5-green)
 ![](https://img.shields.io/badge/javascript-%20ES5-orange)
 ![](https://img.shields.io/badge/css-%203-lightgrey)
-![](https://img.shields.io/badge/jquery-%201.5-blue)
-![](https://img.shields.io/badge/sass-3.7.4-yellow)
+![](https://img.shields.io/badge/jquery-%201.3-blue)
+![](https://img.shields.io/badge/sass-1.2.7-yellow)
 ![](https://img.shields.io/badge/html-%205-blue)
-![](https://img.shields.io/badge/php-7.4-blue)
+![](https://img.shields.io/badge/php-7.2-blue)
 
 This project is an academy project. This's made to evaluate my capacity to reproduce user interfaces with a little data; test JQuery mobile on swipe events and get more knowledge on SASS pre-processor. It's a front-end project only. No real back-end API is used. Note that the project use PHP to control which view will be displayed within certain cases. The main goal of this quiz is to train myself to build views without any CSS package like Bootstrap, etc... And explore CSS animations with JavaScript.
 
